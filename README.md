@@ -36,7 +36,7 @@ To get started, open the `pyproject.toml` file and set the required Python versi
 After you have specified the Python version, you can create a virtual environment with `uv venv` and add packages with `uv add <package>`. Before the workshop, you can generate a requirements.txt file, which is needed e.g. for running code in GoogleColab, by running `uv export > requirements.txt`.
 
 ## Video record
-Re-watch [this YouTube stream](link)
+Re-watch [this YouTube stream](https://youtube.com/live/SqGmmLGmrXQ)
 
 ## Credits
 This workshop was set up by @pyladiesams and {your GitHub handler}
