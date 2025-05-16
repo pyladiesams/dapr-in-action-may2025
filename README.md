@@ -1,50 +1,97 @@
+# Dapr in Action: From Core Concepts to AI Agents
 
-# { WORKSHOP NAME } 
-### Presentation: [{ YOUR PRESENTATION NAME }](workshop/presentation_template.pdf)
+### Presentation: [Slides](https://github.com/pyladiesams/dapr-in-action-may2025/blob/main/workshop/dapr_in_actions.pdf)
 
 ## Workshop description
-Describe why your topic is important and what you want to share with your audience
 
-## Requirements
-* PyLadies Amsterdam uses [uv](https://docs.astral.sh/uv/) for dependency management
-* Google account if you want to use [Google Colab](https://colab.research.google.com/)
- 
-## Usage
-### with uv
-Run the following code:
+Welcome to the workshop on building AI Agents with Dapr!
+
+[Dapr](https://github.com/dapr/dapr) is a powerful open-source runtime that simplifies building distributed applications. During this session, you'll get up to speed on Dapr's fundamentals and gain practical experience creating AI agents using [dapr-agents](https://github.com/dapr/dapr-agents).
+
+This workshop is split in two parts: 
+
+1. guided workshop on building introductory agents 
+2. self-paced advanced workshop
+
+## Introductory Workshop Requirements 
+
+First clone the repo:
+
 ```bash
-git clone <github-url-of-workshop-repo>
-cd <name-of-repo>
+git clone https://github.com/pyladiesams/dapr-in-action-may2025
+cd dapr-in-action-may2025
+```
 
-# create and activate venv, install dependencies
+### Using a notebook
+
+* Python 3.10 (recommended) or higher
+* Jupyter notebook or jupyter-lab
+
+or
+
+* Google Colab
+
+### Setting up dependencies when using Jupyter notebook
+
+* Python 3.10 (recommended) or higher
+* pip package manager or [uv](https://docs.astral.sh/uv/getting-started/installation/)
+
+## Usage
+
+### with uv
+
+Run the following code:
+
+```
+uv venv
+source .venv/bin/activate
 uv sync
 ```
-### with Google collab
-1. Visit [Google Colab](https://colab.research.google.com/)
-2. In the top left corner select "File" &#8594; "Open Notebook"
-3. Under "GitHub", enter the URL of the repo of this workshop
-4. Select one of the notebooks within the repo.
-5. At the top of the notebook, add a Code cell and run the following code:
-```bash
-!git clone <github-url-of-workshop-repo>
-%cd <name-of-repo>
-!pip install -r requirements.txt
-```
-### for a workshop giver
-To get started, open the `pyproject.toml` file and set the required Python version. The pre-selected version 3.8 is generally a safe choice for most use cases.
 
-After you have specified the Python version, you can create a virtual environment with `uv venv` and add packages with `uv add <package>`. Before the workshop, you can generate a requirements.txt file, which is needed e.g. for running code in GoogleColab, by running `uv export > requirements.txt`.
+### without uv
+
+Set up a virtual environment using virtualenv:
+    * pip install virtualenv
+    * Install environment: python3 -m venv venv
+    * Activate environment: source venv/bin/activate
+    * Install dependencies in environment: pip install -r requirements.txt
+       
+### API Keys
+
+API keys can abe accessed via this [privatebin](https://privatebin.net/?ec00cd7f2c464e55#8xMHSFNHyTrGe8f1DhyB62qCmb9RwrPoFExV5pWKXZEs). The password will be shared during the workshop. 
+
+The keys will only be available during the workshop. If you want to follow the workshop after, please generate HuggingFace and Currents API key yourself first at https://huggingface.co/ and https://currentsapi.services/en.
+
+If you are using Google Colab, instructions on how the set the secrets is provided in the notebook.
+
+If you are using Jupyter notebook locally, please update `helper_secrets.py` file in `workshop/introductory_workshop`:
+
+```env
+HUGGINGFACE_API_KEY=your_api_key_here
+CURRENTS_API_KEY=your_api_key_here
+```
+
+Replace `your_api_key_here` with your actual HuggingFace and Currents API key.
+
+### Starting the notebook
+
+If you are using Jupyter notebooks, navigate to `workshop/introductory_workshop` and run `jupyter notebook`.
+
+If you are using Google Colab, navigate to https://colab.research.google.com/ and import the notebooks in `workshop/introductory_workshop`. 
+
+## [Optional] Self-paced Advanced Workshop
+
+If you'd like to also follow the advanced version of this workshop, we need to install a few more dependencies:
+
+* [Dapr CLI](https://docs.dapr.io/getting-started/install-dapr-cli/)
+* [Docker Desktop](https://docs.docker.com/desktop/)
+
+Since we'll be using the Dapr CLI the advanced section of the workshop can't be run in a notebook. Refer to the READMEs in each subdirectory on instructions how to run the code in the terminal.
+
+You are all set and ready to begin!
 
 ## Video record
 Re-watch [this YouTube stream](https://youtube.com/live/SqGmmLGmrXQ)
 
 ## Credits
-This workshop was set up by @pyladiesams and {your GitHub handler}
-
-
-## Appendix
-### Pre-Commit Hooks
-
-To ensure our code looks beautiful, PyLadies uses pre-commit hooks. You can enable them by running `pre-commit install`. You may have to install `pre-commit` first, using `uv sync`, `uv pip install pre-commit` or `pip install pre-commit`.
-
-Happy Coding :)
+This workshop was set up by @pyladiesams, Dana Arsovska ([Git](https://github.com/Dzvezdana), [LinkedIn](https://www.linkedin.com/in/dana-arsovska/)) and Marc Duiker ([web site](https://marcduiker.dev/)).
