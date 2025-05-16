@@ -51,10 +51,11 @@ uv sync
 ### without uv
 
 Set up a virtual environment using virtualenv:
-    * pip install virtualenv
-    * Install environment: python3 -m venv venv
-    * Activate environment: source venv/bin/activate
-    * Install dependencies in environment: pip install -r requirements.txt
+
+* pip install virtualenv
+* Install environment: python3 -m venv venv
+* Activate environment: source venv/bin/activate
+* Install dependencies in environment: pip install -r requirements.txt
        
 ### API Keys
 
