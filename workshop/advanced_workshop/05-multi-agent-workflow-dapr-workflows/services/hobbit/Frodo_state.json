@@ -1,0 +1,29 @@
+{
+    "instances": {
+        "e239d5669ea348af914454c805f70e33": {
+            "input": "Triggered without input.",
+            "output": "\"Lord, I am small, and so is the one ring I am to carry, but its evil is much greater than me. I will leave Middle-earth for the Mountains of Shadow, with my uncle Bilbo; he is much better suited than I for this task. May the Eagles be with me on my journey to Mount Doom, even as I fear the dark places from which no light can escape. No night will befall me so deep that I cannot find the dawn. And remember, even if this seems like a great burden, I must complete it in hope that may bring light to all the peoples of Middle-earth. There is much pain ahead, but as the One gives the strength to fight it, so, too, do I accept everything that may come on my way. Yet, ultimately, like the ring, this journey is about freedom, for those who would end its rule over us.\"",
+            "start_time": "2025-05-16T16:22:34.148703",
+            "end_time": "2025-05-16T16:22:41.177761",
+            "messages": [
+                {
+                    "id": "0ae924e1-c504-4a19-9e8d-dcb5ca7d5d49",
+                    "role": "assistant",
+                    "content": "\"Lord, I am small, and so is the one ring I am to carry, but its evil is much greater than me. I will leave Middle-earth for the Mountains of Shadow, with my uncle Bilbo; he is much better suited than I for this task. May the Eagles be with me on my journey to Mount Doom, even as I fear the dark places from which no light can escape. No night will befall me so deep that I cannot find the dawn. And remember, even if this seems like a great burden, I must complete it in hope that may bring light to all the peoples of Middle-earth. There is much pain ahead, but as the One gives the strength to fight it, so, too, do I accept everything that may come on my way. Yet, ultimately, like the ring, this journey is about freedom, for those who would end its rule over us.\"",
+                    "timestamp": "2025-05-16T16:22:41.169166",
+                    "name": null
+                }
+            ],
+            "last_message": {
+                "id": "0ae924e1-c504-4a19-9e8d-dcb5ca7d5d49",
+                "role": "assistant",
+                "content": "\"Lord, I am small, and so is the one ring I am to carry, but its evil is much greater than me. I will leave Middle-earth for the Mountains of Shadow, with my uncle Bilbo; he is much better suited than I for this task. May the Eagles be with me on my journey to Mount Doom, even as I fear the dark places from which no light can escape. No night will befall me so deep that I cannot find the dawn. And remember, even if this seems like a great burden, I must complete it in hope that may bring light to all the peoples of Middle-earth. There is much pain ahead, but as the One gives the strength to fight it, so, too, do I accept everything that may come on my way. Yet, ultimately, like the ring, this journey is about freedom, for those who would end its rule over us.\"",
+                "timestamp": "2025-05-16T16:22:41.169166",
+                "name": null
+            },
+            "tool_history": [],
+            "source": "RandomOrchestrator",
+            "source_workflow_instance_id": "da7630b3171149bfbef0a4bc6bc3b566"
+        }
+    }
+}
