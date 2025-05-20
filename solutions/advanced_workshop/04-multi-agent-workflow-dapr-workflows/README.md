@@ -18,7 +18,7 @@ uv sync
 
 <!-- END_STEP -->
 
-2. Create a `.env` file for your API keys in `advanced_workshop/05-multi-agent-workflow-dapr-workflows/`:
+2. Create a `.env` file for your API keys in `advanced_workshop/04-multi-agent-workflow-dapr-workflows/`:
 
 ```env
 HUGGINGFACE_API_KEY=your_api_key_here
@@ -95,6 +95,12 @@ if __name__ == "__main__":
 ```
 
 Similar implementations exist for the Wizard (Gandalf) and Elf (Legolas) agents.
+
+### AssistantAgent vs ReActAgent
+
+You may have noticed that this example used an `AssistantAgent` instead of a `ReActAgent`.
+
+ An `AssistantAgent` is a conversational AI agent that responds to user messages, engages in discussions,and dynamically utilizes external tools when needed. Unlike the `ReActAgent`, it doesn't implement a looping process of reasoning and it's suitable for short conversations and well-structured tasks.
 
 ### Workflow Orchestrator Implementations
 
@@ -252,6 +258,18 @@ Dapr Agents supports multiple workflow orchestration patterns:
 3. **Zipkin Tracing**: Access distributed tracing at http://localhost:9411/zipkin/
 4. **Dapr Metrics**: Access agent performance metrics via (ex: HobbitApp) http://localhost:6001/metrics when configured
 
+## Getting your hands dirty
+
+After you ran the exercise successfully and you have an overview of the Dapr components you can add an extra agent to the mix! Our current characters are hobbit, wizard and elf.
+
+Try to add more Lord of the Rings characters as services, for example you could add an eagle, dwarf or ranger.
+
+To do this:
+
+1. Add a new folder in `services` and copy the contents of `app.py`.
+2. Adjust the `name`, `role`, `goal` and the `instructions`.
+3. Register your newly created service in `dapr-llm.yaml`, `dapr-random.yaml` and `dapr-roundrobin.yaml`.
+
 ## Troubleshooting
 
 1. **Service Startup**: If services fail to start, verify Dapr components configuration
@@ -259,11 +277,3 @@ Dapr Agents supports multiple workflow orchestration patterns:
 3. **Workflow Errors**: Check Zipkin traces for detailed request flows
 4. **Port Conflicts**: If ports are already in use, check which port is already in use
 5. **System Reset**: Clear Redis data through Redis Insights if needed
-
-## Next Steps
-
-After completing this exercise, you can:
-
-- Add more agents to the workflow
-- Switch to another workflow orchestration pattern (RoundRobin, LLM-based)
-- Extend agents with custom tools

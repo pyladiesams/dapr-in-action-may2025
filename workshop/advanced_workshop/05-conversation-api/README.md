@@ -28,7 +28,7 @@ uv sync
 
 <!-- END_STEP -->
 
-2. Then, navigate to `advanced_workshop/04-conversation-api/`. Open a new terminal window and run the multi app run template:
+2. Then, navigate to `advanced_workshop/05-conversation-api/`. Open a new terminal window and run the multi app run template:
 
 <!-- STEP
 name: Run multi app run template
