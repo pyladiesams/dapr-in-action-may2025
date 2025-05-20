@@ -12,5 +12,6 @@ dev-dependencies = [
     "dapr-agents==0.5.1",
     "python-dotenv",
     "notebook",
-    "yfinance>=0.2.61"
+    "yfinance>=0.2.61",
+    "prompty"
 ]

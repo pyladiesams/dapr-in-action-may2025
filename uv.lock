@@ -8,6 +8,15 @@ resolution-markers = [
 ]
 
 [[package]]
+name = "aiofiles"
+version = "24.1.0"
+source = { registry = "https://pypi.org/simple" }
+sdist = { url = "https://files.pythonhosted.org/packages/0b/03/a88171e277e8caa88a4c77808c20ebb04ba74cc4681bf1e9416c862de237/aiofiles-24.1.0.tar.gz", hash = "sha256:22a075c9e5a3810f0c2e48f3008c94d68c65d763b9b03857924c99e57355166c", size = 30247, upload-time = "2024-06-24T11:02:03.584Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/a5/45/30bb92d442636f570cb5651bc661f52b610e2eec3f891a5dc3a4c3667db0/aiofiles-24.1.0-py3-none-any.whl", hash = "sha256:b4ec55f4195e3eb5d7abd1bf7e061763e864dd4954231fb8539a0ef8bb8260e5", size = 15896, upload-time = "2024-06-24T11:02:01.529Z" },
+]
+
+[[package]]
 name = "aiohappyeyeballs"
 version = "2.6.1"
 source = { registry = "https://pypi.org/simple" }
@@ -628,6 +637,7 @@ dev = [
     { name = "dapr-agents" },
     { name = "notebook" },
     { name = "pre-commit" },
+    { name = "prompty" },
     { name = "python-dotenv" },
     { name = "yfinance" },
 ]
@@ -639,6 +649,7 @@ dev = [
     { name = "dapr-agents", specifier = "==0.5.1" },
     { name = "notebook" },
     { name = "pre-commit", specifier = ">=3.5.0" },
+    { name = "prompty" },
     { name = "python-dotenv" },
     { name = "yfinance", specifier = ">=0.2.61" },
 ]
@@ -2039,6 +2050,22 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/bb/6e/9d084c929dfe9e3bfe0c6a47e31f78a25c54627d64a66e884a8bf5474f1c/prompt_toolkit-3.0.51.tar.gz", hash = "sha256:931a162e3b27fc90c86f1b48bb1fb2c528c2761475e57c9c06de13311c7b54ed", size = 428940, upload-time = "2025-04-15T09:18:47.731Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/ce/4f/5249960887b1fbe561d9ff265496d170b55a735b76724f10ef19f9e40716/prompt_toolkit-3.0.51-py3-none-any.whl", hash = "sha256:52742911fde84e2d423e2f9a4cf1de7d7ac4e51958f648d9540e0fb8db077b07", size = 387810, upload-time = "2025-04-15T09:18:44.753Z" },
+]
+
+[[package]]
+name = "prompty"
+version = "0.1.50"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "aiofiles" },
+    { name = "click" },
+    { name = "jinja2" },
+    { name = "python-dotenv" },
+    { name = "pyyaml" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/85/bb/c2c9d17f23cba698c05cf9542f4d650ac3f3accd381c62c502263ed67ac4/prompty-0.1.50.tar.gz", hash = "sha256:6e0c9c030457f8b0e1a6268d80c53b1e745c47b4df26be2b9dcd0515e9be8630", size = 218307, upload-time = "2025-04-02T04:34:43.442Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/f0/38/feddc252b8de60ab326978403ff63c9ebb46ebd6d93750c0e66d77223702/prompty-0.1.50-py3-none-any.whl", hash = "sha256:068570235ae87d60f7a7b90cc901a90fef6c7e079c2a7259ad048dbb8ceee2b7", size = 37568, upload-time = "2025-04-02T04:34:42.183Z" },
 ]
 
 [[package]]
