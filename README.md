@@ -1,6 +1,6 @@
 # Dapr in Action: From Core Concepts to AI Agents
 
-### Presentation: [Slides](https://github.com/pyladiesams/dapr-in-action-may2025/blob/main/workshop/dapr_in_actions.pdf)
+### Presentation: [Slides](./workshop/dapr_in_actions.pdf)
 
 ## Workshop description
 
