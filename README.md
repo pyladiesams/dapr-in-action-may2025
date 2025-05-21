@@ -1,6 +1,6 @@
 # Dapr in Action: From Core Concepts to AI Agents
 
-### Presentation: [Slides](./workshop/dapr_in_actions.pdf)
+### Presentation: [Slides](./workshop/dapr_in_action.pdf)
 
 ## Workshop description
 
@@ -52,7 +52,7 @@ uv sync
 
 Set up a virtual environment using virtualenv:
 
-```bash
+```
 # Install virtualenv package (typically pre-installed)
 pip install virtualenv
 
@@ -64,6 +64,7 @@ source ./.venv/bin/activate
 
 # Install dependencies
 pip install -r requirements.txt
+```
        
 ### API Keys
 
@@ -75,7 +76,7 @@ If you are using Google Colab, instructions on how the set the secrets is provid
 
 If you are using Jupyter notebook locally, please update `helper_secrets.py` file in `workshop/introductory_workshop`:
 
-```env
+```
 HUGGINGFACE_API_KEY=your_api_key_here
 CURRENTS_API_KEY=your_api_key_here
 ```
