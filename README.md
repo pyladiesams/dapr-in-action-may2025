@@ -68,7 +68,7 @@ pip install -r requirements.txt
        
 ### API Keys
 
-API keys can abe accessed via this [privatebin](https://privatebin.net/?ec00cd7f2c464e55#8xMHSFNHyTrGe8f1DhyB62qCmb9RwrPoFExV5pWKXZEs). The password will be shared during the workshop. 
+API keys can abe accessed via this [privatebin](https://privatebin.net/?c5cac7711b95495f#5CoFGVxEPYp83dAGqm1ZZ4NkGSpg9GtinmLknmGwWsiq). The password will be shared during the workshop. 
 
 The keys will only be available during the workshop. If you want to follow the workshop after, please generate HuggingFace and Currents API key yourself first at https://huggingface.co/ and https://currentsapi.services/en.
 
