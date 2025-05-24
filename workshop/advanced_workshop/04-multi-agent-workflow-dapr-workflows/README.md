@@ -32,6 +32,8 @@ HUGGINGFACE_API_KEY=your_api_key_here
 
 ## Project Structure
 
+You can find a detailed explanation on each of the components in this blog post: [Floki: Building an AI Agentic Workflow Engine with Dapr](https://blog.openthreatresearch.com/floki-building-an-ai-agentic-workflow-engine-dapr/).
+
 ```
 components/               # Dapr configuration files
 ├── statestore.yaml       # State store configuration
