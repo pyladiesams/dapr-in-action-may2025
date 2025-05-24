@@ -22,12 +22,10 @@ async def main():
                 "Respond concisely, accurately, and relevantly, ensuring clarity and strict alignment with the task."
             ],
             message_bus_name="messagepubsub",
-            state_store_name="agenticworkflowstate",
+            state_store_name="workflowstatestore",
             state_key="workflow_state",
-            agents_registry_store_name="agentsregistrystore",
+            agents_registry_store_name="agentstatestore",
             agents_registry_key="agents_registry",
-            service_port=8007,
-            daprGrpcPort=50007,
             llm=llm_client
         )
 
